@@ -3,10 +3,7 @@ import TodoAdd from './components/TodoAdd.vue';
 </script>
 
 <template>
-
-<TodoAdd />
+	<TodoAdd />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

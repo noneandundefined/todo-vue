@@ -17,7 +17,7 @@ We will ensure that your finding gets escalated to the appropriate maintainer(s)
 If you believe you have found a security vulnerability in any Litestar-managed repository, please report it to us through coordinated disclosure:
 
 - In the affected repository, browse to the **Security** tab, select **Advisories**, select "Report a vulnerability"
-  - ![image](https://user-images.githubusercontent.com/45884264/217041010-8fd6b96b-329d-4d8e-8838-9b5bf4e1a78d.png)
+    - ![image](https://user-images.githubusercontent.com/45884264/217041010-8fd6b96b-329d-4d8e-8838-9b5bf4e1a78d.png)
 - Please do **NOT** create an issue in the affected repository
 - Please do **NOT** send a private message to and/or tag the "@maintainer" role on our [Discord server](https://discord.gg/MmcwxztmQb)
 
