@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Monomakh&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(172,130,223);
+  background-color: #72469b;
+  font-family: "Monomakh", sans-serif;
+  color: #fff;
+}
+.form{
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 12px 18px;
+  max-width: 380px;
+  width: 100%;
+}
+.form input{
+  max-width: 200px;
+}
+.form input,
+.btn{
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  background-color: transparent;
+}
+.btn{
+  white-space: nowrap;
+}
