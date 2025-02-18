@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import './base.css';
 
 #app {
@@ -33,3 +34,8 @@ a,
     padding: 0 2rem;
   }
 }
+=======
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+>>>>>>> 1f5c4e7114732edfc32c51b8960a13fc3cee2eb8
