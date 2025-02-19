@@ -1,4 +1,8 @@
-
+<p align="center">
+  <a href="" target="_blank" rel="noopener noreferrer">
+    <img width="150" src="https://github.com/AlgorithmofAction/todo-vue/blob/main/public/todo-logo.png" alt="Todo logo">
+  </a>
+</p>
 </br>
 <p align="center">
   <a href="https://github.com/AlgorithmofAction/todo-vue/actions/workflows/build_client.yml"><img src="https://github.com/AlgorithmofAction/todo-vue/actions/workflows/build_client.yml/badge.svg" alt="Build WebApp"></a>
