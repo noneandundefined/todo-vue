@@ -1,4 +1,4 @@
-<script setup></script>
+<script></script>
 <template>
 	<h1 class="text-2xl font-bold text-center mt-5 mb-14">
 		Список Задач на Vue

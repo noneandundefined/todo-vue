@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Monomakh&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+html,
+* {
+	font-family: 'Inter', serif;
+}
 body {
-	background: rgb(172, 130, 223);
-	background-color: #72469b;
-	font-family: 'Monomakh', sans-serif;
-	color: #fff;
+	background: rgb(14, 14, 14);
+	color: #f1f1f1;
 }
 .form {
 	margin: 0 auto;

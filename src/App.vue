@@ -1,9 +1,7 @@
-<script setup>
-import TodoAdd from './components/TodoAdd.vue';
-</script>
+<script></script>
 
 <template>
-	<TodoAdd />
+	<router-view></router-view>
 </template>
 
 <style scoped></style>
