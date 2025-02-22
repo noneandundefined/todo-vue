@@ -1,4 +1,5 @@
 # Веб-приложение ToDo (Vue.js + Tailwind CSS)
+
 > (Английская версия сайта)
 
 ## Main Design
@@ -7,7 +8,7 @@
 
 Это веб приложение представляет собой простое веб-приложение ToDo, разработанное с использованием Vue.js для реактивности и компонентной архитектуры, Tailwind CSS для стилизации и JavaScript для логики приложения. Изначально задачи ToDo хранятся в LocalStorage браузера.
 
-**Статус** В настоящее время находится на этапе статического макета
+> [!NOTE] > **Статус** В настоящее время находится на этапе статического макета
 
 ## Функциональность
 
@@ -42,9 +43,9 @@
 
 - Иконки нужно искать на сайте - [heroicons](https://heroicons.com/solid)
 - Или тут [material ui](https://pictogrammers.com/library/mdi/)
-- Хранить иконки в папки constants/ -> svgs/ [например delete.vue]
+- Хранить иконки в папки constants/ -> svgs/ [например DeleteIcon.vue]
 
-delete.vue (ниже показан метод на React)
+DeleteIcon.vue (ниже показан метод на Vue)
 
 ```vue
 <script>
@@ -95,3 +96,44 @@ export default {
 /*  Scoped styles for the component, if needed */
 </style>
 ```
+
+Использование
+
+```vue
+<script>
+import DeleteIcon from './DeleteIcon.vue';
+
+export default {
+	components: {
+		DeleteIcon,
+	},
+	methods: {
+		handleDelete() {
+			console.log('Delete icon clicked!');
+		},
+	},
+};
+</script>
+
+<template>
+	<div>
+		<DeleteIcon
+			fill="#000" // Обязательно
+			size="29" // Необязательно
+			class="bg-[#fff]" // Необязательно
+            style={background: "#fff"} // Необязательно
+			@click="handleDelete" // Необязательно
+		/>
+	</div>
+</template>
+```
+
+## С чего начать
+
+1. Начни с реализации макета как на картинке выше, разбей все на компоненты - header | в папку ui помести RowTable.vue DataTable.vue | вынеси модальные окна также в компоненты | что по считаешь нужным вынеси, я если что посмотрю и подкоректирую
+
+> [!WARNING]
+> DataTable.vue это название колонок и в tr будет кмпонент RowTable.vue это сами данные задач
+
+> [!WARNING]
+> Если будут вопросы по этому плану или ошибки по фукнционалу пиши
