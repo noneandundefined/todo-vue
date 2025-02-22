@@ -6,9 +6,7 @@
 
 **Статус** В настоящее время находится на этапе статического макета
 
-
 ## Функциональность
-
 
 - **Создание задач ToDo:** Добавление новых задач с названиями, статусами, владельцами, приоритетами и диапазонами дат.
 - **Просмотр задач ToDo:** Отображение задач в табличном формате.
@@ -40,40 +38,57 @@
 ### Поиск иконков (Обязательно в svg формате -> после чего адаптировать в vue формат)
 
 - Иконки нужно искать на сайте - [heroicons](https://heroicons.com/solid)
-- Хранить иконки в папки constants/ -> svgs/ delete.vue
+- Или тут [material ui](https://pictogrammers.com/library/mdi/)
+- Хранить иконки в папки constants/ -> svgs/ [например delete.vue]
 
 delete.vue (ниже показан метод на React)
 
-```tsx
-interface IconProps {
-	fill: string;
-	size?: number;
-	style?: any;
-	className?: string;
-	onClick?: () => any;
-}
-
-export const Delete: React.FC<IconProps> = ({
-	fill,
-	size = 24,
-	className,
-	style,
-	onClick,
-}) => {
-	return (
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			className={className}
-			viewBox={`0 0 24 24`}
-			fill={fill}
-			style={style}
-			width={size}
-			height={size}
-			onClick={onClick}
-		>
-			<path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
-		</svg>
-	);
+```vue
+<script>
+export default {
+	props: {
+		fill: {
+			type: String,
+			required: true,
+		},
+		size: {
+			type: Number,
+			default: 24,
+		},
+		style: {
+			type: Object,
+			default: () => ({}), // Important: default value should be a function returning an object
+		},
+		class: {
+			type: String,
+			default: '',
+		},
+		onClick: {
+			type: Function,
+			default: null, // Or undefined if you prefer
+		},
+	},
 };
-export default Delete;
+</script>
+
+<template>
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		:class="class"
+		viewBox="0 0 24 24"
+		:fill="fill"
+		:style="style"
+		:width="size"
+		:height="size"
+		@click="onClick"
+	>
+		<path
+			d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
+		/>
+	</svg>
+</template>
+
+<style scoped>
+/*  Scoped styles for the component, if needed */
+</style>
 ```
