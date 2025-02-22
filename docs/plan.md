@@ -1,6 +1,9 @@
-# Веб-приложение ToDo (Vue.js + Tailwind CSS) (Английская версия сайта)
+# Веб-приложение ToDo (Vue.js + Tailwind CSS)
+> (Английская версия сайта)
 
 ## Main Design
+
+<img src="https://github.com/noneandundefined/todo-vue/blob/main/docs/images/design-todo.jpg" width="500" align="center"></img>
 
 Это веб приложение представляет собой простое веб-приложение ToDo, разработанное с использованием Vue.js для реактивности и компонентной архитектуры, Tailwind CSS для стилизации и JavaScript для логики приложения. Изначально задачи ToDo хранятся в LocalStorage браузера.
 
