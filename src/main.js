@@ -9,5 +9,3 @@ const app = createApp(App);
 app.use(Router);
 
 app.mount('#app');
-
-
