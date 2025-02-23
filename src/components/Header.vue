@@ -34,7 +34,9 @@ export default {
 					</div>
 				</div>
 
-				<div class="header__row-tasks-right flex items-center gap-[0.5rem]">
+				<div
+					class="header__row-tasks-right flex items-center gap-[0.5rem]"
+				>
 					<div
 						class="bg-[transparent] p-[0.35rem] rounded cursor-pointer hover:bg-[#222] transition"
 					>
